@@ -23,7 +23,7 @@ pip install selenium<br/>
 The webdriver is installed from "webdriver_manager" so no need to worry about correct version of your local webdriver.
 
 ## TESTS
-Tests are written written in Python with the Selenium module and asserted with unittest.<br/>
+Tests are written in Python with the Selenium module and asserted with unittest.<br/>
 I have used Seleniums own example of **page object design**.<br/>
 This might be confusing at start but makes code so much shorter and accessible.<br/>
 It's designed to be run from your CLI root folder, just type:<br/>
