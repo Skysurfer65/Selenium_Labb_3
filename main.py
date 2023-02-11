@@ -45,7 +45,7 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_2_malmoe_location(self):
         main_page = page.MainPage(self.driver)
-
+        
         # Find search search field
         main_page.click_search_button()
         # Verify searchform found

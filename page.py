@@ -2,6 +2,9 @@ from locator import *
 from element import BasePageElement
 
 class SearchTextElement(BasePageElement):
+    # This locator can be changed during tests
+    # by adding new 'name' locator
+    # ex: page.SearchTextElement.locator = 'q'
     locator = "s"
 
 class BasePage(object):
