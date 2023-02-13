@@ -29,6 +29,9 @@ This might be confusing at start but makes code so much shorter and accessible.<
 It's designed to be run from your CLI root folder, just type:<br/>
 python -m unittest main -v<br/>
 
+## Selenium IDE
+Under folder Selenium_IDE_Labb_3, there's a .side file that will do the same as the python program but in Selenium IDE.
+
 ## AUTHOR
 Richard Fehling, student at EC Utbildning, MVT22<br/>
 richard.fehling@learnet.se
