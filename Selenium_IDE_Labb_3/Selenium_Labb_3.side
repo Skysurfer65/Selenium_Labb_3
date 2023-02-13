@@ -1,0 +1,261 @@
+{
+  "id": "291ed9e6-6384-41b7-89f1-b7936ae0625d",
+  "version": "2.0",
+  "name": "Selenium_Labb_3",
+  "url": "https://ecutbildning.se/",
+  "tests": [{
+    "id": "e2e02b38-90cb-4713-9830-012695e2e2ea",
+    "name": "test_1",
+    "commands": [{
+      "id": "b3a455c5-26b9-4711-ba1a-2cecf0682adc",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecutbildning.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b49ba68c-c0b2-48e4-a33d-f43f9b2434c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1186x1372",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "258fcc8a-b3b6-40ea-a0c9-012c123fa88b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Våra utbildningar",
+      "targets": [
+        ["linkText=Våra utbildningar", "linkText"],
+        ["css=.btn_outline__text-color_light", "css:finder"],
+        ["xpath=//a[contains(text(),'Våra utbildningar')]", "xpath:link"],
+        ["xpath=(//a[@id=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[2]/header/div/div[2]/div/div/p/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ecutbildning.se/utbildningar/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Våra utbildningar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4efb9a37-c4a3-4e51-a12e-3a7161d75868",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1378)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d261128c-b6b1-43c5-96b9-6e19466fff8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ams_utbildninger--entry:nth-child(8) .ams_utbildninger--title",
+      "targets": [
+        ["css=.ams_utbildninger--entry:nth-child(8) .ams_utbildninger--title", "css:finder"],
+        ["xpath=//div[@id='search-filter-results-37']/div/div[8]/a/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[8]/a/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Mjukvarutestare')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67dd17ea-bf65-4e43-917a-d60112272633",
+      "comment": "Find course \"Mjukvarutestare\"",
+      "command": "assertText",
+      "target": "css=.heading",
+      "targets": [
+        ["css=.heading", "css:finder"],
+        ["xpath=//div[@id='page']/div[3]/header/div/div[2]/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mjukvaru­testare')]", "xpath:innerText"]
+      ],
+      "value": "Mjukvaru­testare"
+    }, {
+      "id": "c5ff78c6-6554-4b80-bf8c-33282e130713",
+      "comment": "the length of the education",
+      "command": "assertText",
+      "target": "css=.utbildninger--program-meta_duration > .meta_text",
+      "targets": [],
+      "value": "1,5 år (Örebro)\\n2 år (Malmö)"
+    }, {
+      "id": "bfc512aa-7fce-4a5c-9664-fd6a458033b9",
+      "comment": "Lenght of education with XPATH contains",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='page']/div[3]/div[4]/div/div/div/div[2]/div[2]/div/div/div/p[4]/span[contains(.,'2 år (Malmö)')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "60a0b32c-f9d6-49b9-a155-c711b2e78495",
+    "name": "test_2",
+    "commands": [{
+      "id": "b7d0d3db-60ab-4387-bb9d-13a46e4f1d16",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecutbildning.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5d88671-ad63-4b87-966b-e5d8952a7fbc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1186x1372",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf105373-28ef-48e9-837b-949aaa76624d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fal:nth-child(2)",
+      "targets": [
+        ["css=.fal:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='wrapper-navbar']/div[2]/div[2]/div/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d0bcedb-e741-4058-8b3a-e03890789308",
+      "comment": "",
+      "command": "click",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "986973a7-aa6b-4659-ae37-9a4328f20ed1",
+      "comment": "",
+      "command": "type",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "malmö"
+    }, {
+      "id": "cae279e3-b114-4a4c-8cba-9f8b856e3008",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7b3491c1-2516-4d6b-8b3c-b03f015e74eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Malmö",
+      "targets": [
+        ["linkText=Malmö", "linkText"],
+        ["css=#post-1039 .entry-title > .site__text-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Malmö')]", "xpath:link"],
+        ["xpath=//article[@id='post-1039']/header/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ecutbildning.se/studieorter/malmo/')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Malmö')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "690d5bfd-77f9-413c-abaf-0a4b17fe3e96",
+      "comment": "Street adress EC Utbildning",
+      "command": "assertText",
+      "target": "css=.col-12:nth-child(2) > .mb-0:nth-child(2)",
+      "targets": [
+        ["css=.col-12:nth-child(2) > .mb-0:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='page']/div[3]/section/div[11]/div/div/article/div[2]/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"]
+      ],
+      "value": "Östra Kanalgatan 5"
+    }, {
+      "id": "f847ee96-c836-4978-a0a1-527000c47ead",
+      "comment": "Softwaretester education",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"page\"]/div[5]/div/div[3]/a/div/div/div/h3[contains(.,'Mjukvarutestare')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "92073a9c-f030-4a5f-a619-99470c3ad9c4",
+    "name": "test_3",
+    "commands": [{
+      "id": "cc2acc9f-09d8-411a-baf1-7751268e3f50",
+      "comment": "",
+      "command": "open",
+      "target": "https://ecutbildning.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f2c3a79-28b0-4f1d-817a-79dbdfc4f4ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1186x1372",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "654287b3-d79a-4b2a-aabf-b42056c61a55",
+      "comment": "Store first news header in variable news_header",
+      "command": "storeText",
+      "target": "xpath=//h3",
+      "targets": [
+        ["css=.card:nth-child(1) .ams_article_module--title", "css:finder"],
+        ["xpath=//div[@id='page']/div[2]/div[4]/div/div/div[6]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Ansökan är öppen')]", "xpath:innerText"]
+      ],
+      "value": "news_header"
+    }, {
+      "id": "cfc1ec7d-5d0f-4fcf-9eb9-164efb9db5a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .ams_article_module--title",
+      "targets": [
+        ["css=.card:nth-child(1) .ams_article_module--title", "css:finder"],
+        ["xpath=//div[@id='page']/div[2]/div[4]/div/div/div[6]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Ansökan är öppen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8cf2f1d-cb4e-465e-b572-c46e46c8d8aa",
+      "comment": "",
+      "command": "echo",
+      "target": "${news_header}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe56e0cc-7bf5-4f13-8be1-c66233b93b9e",
+      "comment": "Assert that variable news_header is in article header",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1",
+      "targets": [
+        ["css=.site__h-tag-1", "css:finder"],
+        ["xpath=//div[@id='page']/div[3]/div/div/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ansökan är öppen - utbilda dig inom IT och teknik 2023!')]", "xpath:innerText"]
+      ],
+      "value": "${news_header}"
+    }]
+  }],
+  "suites": [{
+    "id": "06047e12-f7d1-47d5-a469-ff6e7a92c48b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2e02b38-90cb-4713-9830-012695e2e2ea"]
+  }],
+  "urls": ["https://ecutbildning.se/"],
+  "plugins": []
+}
